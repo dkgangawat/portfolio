@@ -29,7 +29,7 @@ const Mywork = [
         id: 4,
         project_name: "Portfolio",
         img: Portfolio,
-        git_hub_link: "",
+        git_hub_link: "https://dkgangawat.github.io/portfolio",
       },
     ],
     projects:[

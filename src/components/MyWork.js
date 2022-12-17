@@ -38,6 +38,8 @@ export const MyWork = () => {
                   <img src={curr.img} alt="" />
                     <h3>{curr.project_name}</h3>
                     <a href={curr.git_hub_link} id={`btn-${index}`} onMouseOut={()=>{mOut(index)}} className="p-view">view</a>
+                    <a href={curr.git_hub_link} style={{position:"absolute",height:"100%",width:"100%",zIndex:"3",background:"trasparent"}}></a>
+
                 </div>
               </>
             );
