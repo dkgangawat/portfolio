@@ -1,0 +1,94 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#000000 ;
+    color: white;
+    font-weight: 525;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 800px;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.nav-links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.more{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+}
+h2{
+    margin:8px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.nav-links a::after{
+    content: '';
+    background: #ff004f;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+a:hover::after{
+    width:100%;
+}
+a.active::after{
+    width: 100%;
+}
+.main-btn{
+    background-color: #ff004f;
+    padding:10px;
+    font-weight: 700;
+    border-radius: 16px;
+    border: 2px solid #ff004f;
+    transition: 0.5s;
+    align-self: flex-end;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    height: 45px;
+}
+.main-btn:hover{
+    background-color: #000000;
+}
+@media only screen and (max-width: 600px){
+    .more{
+        display: none;
+    }
+        .nav-links{
+            width: 70vw;
+            justify-content: space-between;
+        }
+}
