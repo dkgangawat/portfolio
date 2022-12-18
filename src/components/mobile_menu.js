@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Css/mobile_menu.css"
 import { NavLink } from 'react-router-dom';
-const M_menu = () => {
+const Mmenu = () => {
 
     const handleClick =()=>{
         const accordion = document.getElementById('mobile-menu')
@@ -19,7 +19,7 @@ const M_menu = () => {
             <div className="mainContent">
             <NavLink to="/about/interest">About</NavLink>
             <NavLink to="/mywork">My work</NavLink>
-            <a href="/#contect">Contect Me</a>
+            <a href="/portfolio/#contect">Contect Me</a>
             {/* <NavLink className="main-btn" to="/Source">Source codes</NavLink> */}
             <a className="main-btn" href="https://github.com/dkgangawat">Source codes</a> 
 
@@ -31,4 +31,4 @@ const M_menu = () => {
   )
 }
 
-export default M_menu
+export default Mmenu

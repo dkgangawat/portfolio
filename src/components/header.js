@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import M_menu from './mobile_menu';
+import Mmenu from './mobile_menu';
 
 const Header = () => {
   const links = document.getElementsByTagName('a');
@@ -19,12 +19,11 @@ const Header = () => {
             <div className='more'>
               <NavLink to="/about/interest">About</NavLink>
             <NavLink to="/mywork">My work</NavLink>
-            <a href="/#contect">Contect Me</a>
+            <a href="/portfolio/#contect">Contect Me</a>
             {/* <NavLink className="main-btn" to="/Source">Source codes</NavLink>  */}
             <a className="main-btn" href="https://github.com/dkgangawat">Source codes</a> 
             </div>
-           
-            <M_menu/>
+            <Mmenu/>
         </div>
     </nav>
     </>

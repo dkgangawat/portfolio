@@ -11,7 +11,6 @@ const About = () => {
          this.className += " active";
       });
    }
-   console.log(links);
    return (
       <>
          <section >
