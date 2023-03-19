@@ -19,7 +19,7 @@ const Header = () => {
             <div className='more'>
               <NavLink to="/about/interest">About</NavLink>
             <NavLink to="/mywork">My work</NavLink>
-            <a href="/portfolio/#contect">Contect Me</a>
+            <a href="/portfolio/#contact">Contact Me</a>
             {/* <NavLink className="main-btn" to="/Source">Source codes</NavLink>  */}
             <a className="main-btn" href="https://github.com/dkgangawat">Source codes</a> 
             </div>
@@ -29,5 +29,4 @@ const Header = () => {
     </>
   )
 }
-
 export default Header

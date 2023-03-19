@@ -31,7 +31,7 @@ const Home = () => {
       '5v4nHpXEXpkqhYyjC'
     )
       .then((response) => {
-        response.status === 200 ? alert("thanks for reaching out to me, i will contect you soon") : alert('something went wrong, try again')
+        response.status === 200 ? alert("thanks for reaching out to me, i will contact you soon") : alert('something went wrong, try again')
       })
       .catch((err) => {
         console.log('FAILED...', err);
@@ -47,7 +47,7 @@ const Home = () => {
             <h3><Typical steps={['A fullstack developer', 1000, 'Do you want any type of help regarding web development', 2000]} loop={Infinity} /></h3>
           </div>
           <div className='h-btn-div'>
-            <button className='main-btn' style={{ width: "120px", display: "block" }}><a href='#contect'>Hire me</a> </button>
+            <button className='main-btn' style={{ width: "120px", display: "block" }}><a href='#contact'>Hire me</a> </button>
           </div>
 
         </div>
@@ -72,9 +72,9 @@ const Home = () => {
         })}
 
       </section>
-      <section className='h-sec-3' id='contect'>
-        <div className='contect-details'>
-          <h1>Contect me</h1>
+      <section className='h-sec-3' id='contact'>
+        <div className='contact-details'>
+          <h1>contact me</h1>
           <h4>Hi there, if you have any work regarding web development and in any other technical aspect plz reach out to me.</h4>
           <div>
             <p>Email:<a href="mailto:bairwaddeepak@gmail.com">bairwaddeepak@gmail.com</a></p>
@@ -93,7 +93,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='contect-form'>
+        <div className='contact-form'>
           <form onSubmit={onSubmit}>
             <label htmlFor="">Your full Name</label>
             <input type="text" placeholder='Your Name' name='from_name' value={toSend.from_name}   onChange={handleChange} />

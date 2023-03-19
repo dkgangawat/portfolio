@@ -1,42 +1,48 @@
-.h-sec-1{
+.h-sec-1 {
     padding: 0 80px;
     height: 90vh;
 }
-.intro{
+
+.intro {
     width: 50%;
     padding-left: 16px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
 }
-.intro-content{
-   padding-left: 45px;
+
+.intro-content {
+    padding-left: 45px;
 }
-.intro p{
+
+.intro p {
     font-size: 20px;
 }
-.intro h1{
+
+.intro h1 {
     font-size: 56px;
 }
-.h-btn-div{
-    width: 100%;
-     padding: 10px 45px
-}
-.main-img{
-   width: 50%;
-   display:  flex;
-  justify-content: center;
 
+.h-btn-div {
+    width: 100%;
+    padding: 10px 45px
 }
-.img-conatiner{
+
+.main-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-conatiner {
     height: 500px;
     width: 500px;
     border-radius: 50%;
     overflow: hidden;
     border: 8px solid #ff004f;
 }
-.main-img img{
+
+.main-img img {
     object-fit: fill;
     height: 100%;
     width: 100%;
@@ -44,16 +50,19 @@
     -webkit-user-drag: none;
     cursor: pointer;
 }
-.main-img img:hover{
+
+.main-img img:hover {
     scale: 1.1;
 }
-.h-sec-2{
+
+.h-sec-2 {
     background-color: #1C1E23;
     flex-wrap: wrap;
     gap: 16px;
     padding: 3rem;
 }
-.card{
+
+.card {
     display: block;
     width: 300px;
     background-color: #151F32;
@@ -62,67 +71,80 @@
     border-radius: 16px;
     position: relative;
 }
-.card h2{
+
+.card h2 {
     font-size: 24px;
     color: #ff004f;
 }
-.card::after{
+
+.card::after {
     content: '';
     position: absolute;
     height: 0;
     width: 300px;
     background: #ff004f;
     border-radius: 16px;
-   left: 0;
-   bottom: 0;
-   transition: 0.5s;
-   z-index: 1;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: 1;
 }
-.card:hover h2{
-    color: white;
 
+.card:hover h2 {
+    color: white;
 }
-.card:hover::after{
- height: 180px;
+
+.card:hover::after {
+    height: 180px;
 }
-.card-content{
+
+.card-content {
     position: absolute;
-    z-index:3;
+    z-index: 3;
     background: transparent;
 }
-.card-content p{
-  color: #B0C3D6;
-  text-align: center;
- font-weight: 600;
+
+.card-content p {
+    color: #B0C3D6;
+    text-align: center;
+    font-weight: 600;
 }
-.h-sec-3{
+
+.h-sec-3 {
     height: 100vh;
     padding: 80px;
     font-size: 20px;
 }
-.contect-details{
+
+.contact-details {
     width: 50%;
     align-self: flex-start;
     padding: 16px;
 }
-.contect-details h4{
+
+.contact-details h4 {
     color: #5b5c5e;
     padding: 16px 0;
 }
-.contect-details p{
+
+.contact-details p {
     font-size: 16px;
     margin: 16px 0;
 }
-.contect-details h1{
+
+.contact-details h1 {
     font-size: 48px;
 }
-.contect-form{
+
+.contact-form {
     width: 50%;
 }
-.contect-form input, .contect-form textarea{
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     font-size: 20px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 10px;
     margin: 8px 0 20px 0;
     height: 40px;
@@ -132,18 +154,23 @@
     border: none;
     border-radius: 8px;
 }
-.contect-form textarea{
-     min-height: 200px;
-     max-height: 200px;
+
+.contact-form textarea {
+    min-height: 200px;
+    max-height: 200px;
     max-width: 100%;
     min-width: 100%;
 }
-.social{
+
+.social {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
-.fb-icon, .insta-icon, .tw-icon{
+
+.fb-icon,
+.insta-icon,
+.tw-icon {
     height: 60px;
     width: 60px;
     /* align-items: center; */
@@ -153,45 +180,43 @@
     padding: 8px;
     border-radius: 50%;
 }
+
 @media only screen and (max-width: 600px) {
-    .h-sec-1{
+    .h-sec-1 {
         flex-wrap: wrap;
         padding: 8px;
         /* height: auto; */
     }
-    .intro{
+    .intro {
         width: 100%;
     }
-    .intro-content{
+    .intro-content {
         padding-left: 0;
     }
-    .h-btn-div{
+    .h-btn-div {
         padding: 8px 0;
     }
-    .intro h1{
+    .intro h1 {
         font-size: 26px;
     }
-    .main-img{
+    .main-img {
         width: 100%;
         height: auto;
     }
-    .img-conatiner{
+    .img-conatiner {
         height: auto;
         width: 100%;
     }
-    .h-sec-3{
+    .h-sec-3 {
         height: auto;
         padding: 8px;
     }
-    .contect-details{
+    .contact-details {
         width: 100%;
         padding: 8px;
     }
-    .contect-form{
+    .contact-form {
         width: 100%;
         padding: 16px 8px;
-        
-    }   
-    
+    }
 }
-
